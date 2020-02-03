@@ -1,12 +1,12 @@
-# 0x1B. C - Sorting algorithms & Big O
+# 0x1B. C - Sorting algorithms & Big O.
 
-## General
+## General:
 * At least four different sorting algorithms
 * What is the Big O notation, and how to evaluate the time complexity of an algorithm
 * How to select the best sorting algorithm for a given input
 * What is a stable sorting algorithm
 
-## Requirements
+## Requirements:
 * Allowed editors: vi, vim, emacs
 * All your files will be compiled on Ubuntu 14.04 LTS
 * Your programs and functions will be compiled with gcc 4.8.4 using the flags -Wall -Werror -Wextra and -pedantic
