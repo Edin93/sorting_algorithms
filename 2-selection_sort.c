@@ -11,20 +11,23 @@ void selection_sort(int *array, size_t size)
 	size_t min;
 	int val;
 
-	for (i = 0; i < size - 1; i++)
+	if (size > 0)
 	{
-		min = i;
-		for (j = i + 1; j < size; j++)
+		for (i = 0; i < size - 1; i++)
 		{
-			if (array[j] < array[min])
-				min = j;
+			min = i;
+			for (j = i + 1; j < size; j++)
+			{
+				if (array[j] < array[min])
+					min = j;
+			}
+			if (min != i)
+			{
+				val = array[i];
+				array[i] = array[min];
+				array[min] = val;
+			}
+			print_array(array, size);
 		}
-		if (min != i)
-		{
-			val = array[i];
-			array[i] = array[min];
-			array[min] = val;
-		}
-		print_array(array, size);
 	}
 }
