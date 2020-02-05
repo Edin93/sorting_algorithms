@@ -81,5 +81,6 @@ int arrange(int *array, int size, int s, int e)
  */
 void quick_sort(int *array, size_t size)
 {
-	sort(array, size, 0, size - 1);
+	if (size > 0)
+		sort(array, size, 0, size - 1);
 }
