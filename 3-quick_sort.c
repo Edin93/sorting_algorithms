@@ -56,7 +56,7 @@ int arrange(int *array, int size, int s, int e)
 	{
 		if (array[k] < array[p])
 		{
-			if (k != h)
+			if (array[k] != array[h])
 			{
 				swap(&array[h], &array[k]);
 				print_array(array, size);
@@ -64,7 +64,7 @@ int arrange(int *array, int size, int s, int e)
 			h++;
 		}
 	}
-	if (h != k)
+	if (array[h] != array[k])
 	{
 		swap(&array[p], &array[h]);
 		print_array(array, size);
