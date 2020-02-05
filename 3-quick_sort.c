@@ -34,7 +34,7 @@ void sort(int *array, int size, int s, int e)
 	{
 		p = arrange(array, size, s, e);
 		sort(array, size, s, p - 1);
-		sort(array, size,  p + 1, size - 1);
+		sort(array, size,  p + 1, e);
 	}
 }
 
